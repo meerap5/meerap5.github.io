@@ -1,0 +1,18 @@
+.header, .footer {
+    height: 75px;
+    min-height: 75px;
+    max-height: 75px;
+}
+
+/*BLOG.HTML*/
+
+.col-md-3, .col-md-9{
+height: 500px;
+}
+
+.col-md-9{
+  float: right;
+}
+
+
+/*PORTFOLIO.HTML*/
