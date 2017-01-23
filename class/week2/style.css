@@ -4,7 +4,7 @@
     max-height: 75px;
 }
 
-/*BLOG.HTML*/
+/* ------------------ BLOG.HTML ------------------ */
 
 .col-md-3, .col-md-9{
 height: 500px;
@@ -14,7 +14,7 @@ height: 500px;
   float: right;
 }
 
-/*PORTFOLIO.HTML */
+/* ---------------- PORTFOLIO.HTML --------------- */
 
 #one{
   min-height: 200px;
@@ -26,3 +26,15 @@ height: 500px;
   margin-left: auto;
   margin-right: auto;
 }
+
+/* ----------------- WEBPAGE.HTML ---------------- */
+
+.col-md-4{
+height: 550px;
+}
+
+#four{
+  min-height: 100px;
+}
+
+/* ----------------- SOCIAL.HTML ---------------- */
