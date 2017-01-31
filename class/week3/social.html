@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>social nested</title>
+    <title>SOCIAL</title>
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -141,22 +141,22 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
 
-    <!-- This is javascript code that Anderson gave us to copy and paste it which ads color-->
+    <!-- random colour generator code-->
     <script>
         function getRandomNumber(min, max) {
             return Math.floor(Math.random() * max + min);
         }
-        //when doc is ready get all classes called random colour
+
         $(document).ready(function() {
 
             var bodyColumns = $(".randomColor");
 
             bodyColumns.each(function() {
-                //change background color to an rgb colour from a random number between 0 and 255
+
                 $(this).css("background-color", "rgb(" + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + ")");
 
             })
-            //does it on the body as well
+
             $("body").css("background-color", "rgb(" + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + ")");
 
 
