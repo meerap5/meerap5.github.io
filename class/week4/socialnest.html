@@ -54,14 +54,26 @@
             max-height: 100px;
             min-height: 100px;
         }
+
+p{
+  padding: 9px 5px 5px 20px;
+}
     </style>
 </head>
+                              <!--
 
+                              img{
+                                        width: 100%;
+                                        height: 100%;
+                                      }
+                              -->
 <body>
 
     <div class="container">
         <div class="row">
             <div class="col-md-12 header randomColor">
+                <center>
+                    <h3>WELCOME TO MEERA'S RANDOM COLLECTION OF THINGS</h3></center>
             </div>
         </div>
 
@@ -69,54 +81,85 @@
             <div class="col-md-3 mainthree randomColor">
 
                 <div class="row">
-                    <div class="mainthreeleft col-md-12 randomColor"></div>
+                    <div class="mainthreeleft col-md-12 randomColor">
+                      <img src="images/plantman.jpg" alt="Plant man." />
+                  </div>
                 </div>
                 <div class="row">
-                    <div class="mainthreeleft col-md-12 randomColor"></div>
+                    <div class="mainthreeleft col-md-12 randomColor">
+                      <img src="images/ratburn.gif" alt="Ratburn." />
+                    </div>
                 </div>
                 <div class="row">
-                    <div class="mainthreeleft col-md-12 randomColor"></div>
+                    <div class="mainthreeleft col-md-12 randomColor">
+                      <img src="images/yellowflower.jpg" alt="A yellow flower." />
+                    </div>
                 </div>
             </div>
 
             <div class="col-md-7 mainthree randomColor">
                 <div class="row">
-                    <div class="mainthreemiddletop col-md-12 randomColor"></div>
+                    <div class="mainthreemiddletop col-md-12 randomColor">
+                      <img src="images/smilelady.jpg" alt="Smile lady." />
+                    </div>
                 </div>
 
                 <div class="row">
-                    <div class="mainthreemiddlebottom col-md-3 randomColor"></div>
-                    <div class="mainthreemiddlebottom col-md-9 randomColor"></div>
+                    <div class="mainthreemiddlebottom col-md-3 randomColor">
+                      <img src="images/dog.jpg" alt="The most amazing living thing in the world." />
+                  </div>
+                    <div class="mainthreemiddlebottom col-md-9 randomColor">
+                      <center><p>Welcome! This is Marty the dog, and he's here to guide you around Meera's Random Collection of Things! We've got everything from random funny images of people, to flowers and nature, to characters from popular TV shows and films. Enjoy!</p></center>
+                      </div>
                 </div>
 
                 <div class="row">
-                    <div class="mainthreemiddlebottom col-md-3 randomColor"></div>
-                    <div class="mainthreemiddlebottom col-md-9 randomColor"></div>
+                    <div class="mainthreemiddlebottom col-md-3 randomColor">
+                      <img src="images/stars.jpg" alt="Hanging stars." />
+                    </div>
+                    <div class="mainthreemiddlebottom col-md-9 randomColor">
+
+                        <img src="images/space.jpg" alt="Space." />
+                      </div>
                 </div>
 
                 <div class="row">
-                    <div class="mainthreemiddlebottom col-md-3 randomColor"></div>
-                    <div class="mainthreemiddlebottom col-md-9 randomColor"></div>
+                    <div class="mainthreemiddlebottom col-md-3 randomColor">
+                      <img src="images/mindblown.gif" alt="Mindblown Man." />
+                    </div>
+                    <div class="mainthreemiddlebottom col-md-9 randomColor">
+                      <img src="images/penguins.jpg" alt="Penguins." />
+                    </div>
                 </div>
 
                 <div class="row">
-                    <div class="mainthreemiddlebottom col-md-3 randomColor"></div>
-                    <div class="mainthreemiddlebottom col-md-9 randomColor"></div>
+                    <div class="mainthreemiddlebottom col-md-3 randomColor">
+                      <img src="images/aladdin.jpg" alt="Aladdin." />
+                    </div>
+                    <div class="mainthreemiddlebottom col-md-9 randomColor">
+                      <img src="images/pano.jpg" alt="Nature panorama." />
+                    </div>
                 </div>
             </div>
 
 
             <div class="col-md-2 mainthree randomColor">
                 <div class="row">
-                    <div class="mainthreeleft col-md-12 randomColor"></div>
+                    <div class="mainthreeleft col-md-12 randomColor">
+                        <img src="images/shamwow.jpg" alt="ShamWOW guy." />
+                    </div>
                 </div>
 
                 <div class="row">
-                    <div class="mainthreeleft col-md-12 randomColor"></div>
+                    <div class="mainthreeleft col-md-12 randomColor">
+                        <img src="images/sunflowers.png" alt="Sunflowers." />
+                    </div>
                 </div>
 
                 <div class="row">
-                    <div class="mainthreeleft col-md-12 randomColor"></div>
+                    <div class="mainthreeleft col-md-12 randomColor">
+                      <img src="images/facepaint.jpg" alt="Face Paint Girl." />
+                    </div>
                 </div>
 
             </div>
@@ -124,11 +167,9 @@
 
         <div class="row">
             <div class="col-md-12 footer randomColor">
-
+                <img src="images/baffler.jpg" alt="Random banner from Google." />
             </div>
         </div>
-
-
 
     </div>
 
@@ -141,7 +182,10 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
 
-    <!-- random colour generator code-->
+
+
+    <!-- random colour generator code
+
     <script>
         function getRandomNumber(min, max) {
             return Math.floor(Math.random() * max + min);
@@ -154,14 +198,15 @@
             bodyColumns.each(function() {
 
                 $(this).css("background-color", "rgb(" + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + ")");
-
             })
 
             $("body").css("background-color", "rgb(" + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + ")");
-
-
         })
     </script>
+
+-->
+
+
 </body>
 
 </html>
