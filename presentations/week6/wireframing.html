@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WEEK 5</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+<!-- my font link -->
+    <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+<style media="screen">
+
+.bigText{
+  font-size: 40px;
+  line-height: 75px;
+}
+
+.littleText{
+  font-size: 30px;
+}
+
+.toprow{
+    height:200px;
+    min-height:200px;
+    max-height: 200px;
+  }
+
+.nav{
+  height: 50px;
+  min-height: 50px;
+  max-height: 50px;
+}
+
+.bodyrow{
+  height:300px;
+  min-height:300px;
+  max-height: 300px;
+}
+
+.middlerow{
+    height: 50px;
+    min-height: 50px;
+    max-height: 50px;
+  }
+
+  .bottomrow{
+    height:200px;
+    min-height:200px;
+    max-height: 200px;
+  }
+
+.footerrow {
+  height:30px;
+  min-height:30px;
+  max-height: 30px;
+}
+
+
+</style>
+
+    <div class="container">
+      <!-- container-fluid makes it fit the whole screen, container doesn't-->
+
+          <div id="top" class="row">
+            <div class="col-md-4 toprow randomColor">HEADER PHOTO</div>
+            <div class="col-md-8 toprow randomColor">HEADER TITLE</div>
+          </div>
+
+          <div id="nav" class="row">
+            <div class= "col-md-12 middlerow randomColor">NAV</div>
+          </div>
+
+          <div id="body" class="row">
+            <div class= "col-md-12 bodyrow randomColor">Using a wireframe is very helpful because it is an essential step in creating a website or doing any other type of project. It is after the brainstorming stage, and wireframing is essentially the planning stage of where the content will be placed. Even if there is no decided content, you can still create a wireframe to help organize the layout and the wireframe can help in figuring out how much content you want and need. My wireframe is very simple and minimalistic, and everything is laid out clearly to avoid confusion. Since the wireframe is for a car dealer's business, the main goal is to provide information about and effeciently sell the cars. The layout has a section/space for each set of content, such as the text, images, and links.</div>
+          </div>
+
+          <div id="bottom" class="row">
+            <div class="col-md-4 bottomrow randomColor positionRelative">PHOTO</div>
+            <div class="col-md-4 bottomrow randomColor positionRelative">PHOTO</div>
+            <div class="col-md-4 bottomrow randomColor positionRelative">PHOTO</div>
+          </div>
+
+          <div id="bottom2" class="row">
+            <div class="col-md-4 bottomrow randomColor positionRelative">PHOTO</div>
+            <div class="col-md-4 bottomrow randomColor positionRelative">PHOTO</div>
+            <div class="col-md-4 bottomrow randomColor positionRelative">PHOTO</div>
+          </div>
+
+          <div id="footer2" class="row">
+            <div class="col-md-12 footerrow randomColor positionRelative">FOOTER</div>
+
+          </div>
+
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+
+<!--random colour generator-->
+
+<script>
+        function getRandomNumber(min, max) {
+            return Math.floor(Math.random() * max + min);
+        }
+
+        $(document).ready(function() {
+
+            var bodyColumns = $(".randomColor");
+
+            bodyColumns.each(function() {
+
+                $(this).css("background-color", "rgb(" + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + ")");
+            })
+
+            $("body").css("background-color", "rgb(" + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + ")");
+
+        })
+    </script>
+
+      </body>
+</html>
