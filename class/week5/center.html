@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+      <meta charset="utf-8">
+
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <title>WEEK 5 - CENTERING</title>
+
+      <!-- Bootstrap stuff-->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Homemade+Apple|Raleway" rel="stylesheet">
+
+      <style media="screen">
+
+          h1 {
+              font-size: 25px;
+              padding: 0 5px;
+          }
+
+          h2 {
+              font-size: 20px;
+              text-align: center;
+          }
+
+          .shark {
+              top: 30%;
+          }
+
+          .hercules {
+              top: 80%;
+          }
+
+          .topRow {
+              height: 50px;
+              min-height: 50px;
+              max-height: 50px;
+          }
+
+          .middleRow {
+              height: 400px;
+              min-height: 400px;
+              max-height: 400px;
+          }
+
+          .middleRow img {
+              position: absolute;
+              left: 50%;
+              transform: translate(-50%, -50%);
+          }
+
+          .bottomRow {
+              height: 150px;
+              min-height: 150px;
+              max-height: 150px;
+          }
+
+          .bottomRow img {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+          }
+
+          .positionRelative {
+              position: relative;
+          }
+
+      </style>
+
+      <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+
+  </head>
+
+  <body>
+
+      <div class="container">
+
+          <div class="row">
+              <div class="col-md-3 randomColor topRow">
+                  <h1>CENTERING</h1>
+              </div>
+
+              <div class="col-md-7 randomColor topRow">
+              </div>
+
+              <div class="col-md-1 randomColor topRow">
+                  <h2>LINK A</h2>
+              </div>
+              
+              <div class="col-md-1 randomColor topRow">
+                  <h2>LINK B</h2>
+              </div>
+          </div>
+
+          <div class="row">
+              <div class="container">
+                  <div class="col-md-12 randomColor middleRow positionRelative">
+                      <img src="images/hercules.gif" alt="Image" class="hercules" />
+                      <img src="images/leftshark.jpg" alt="Image" class="shark" />
+                  </div>
+              </div>
+          </div>
+
+          <div class="row">
+              <div class="col-md-3 randomColor bottomRow positionRelative">
+                  <img src="images/cute.png" alt="bunny" />
+              </div>
+              <div class="col-md-3 randomColor bottomRow positionRelative">
+                  <img src="images/cute.png" alt="bunny" />
+              </div>
+              <div class="col-md-3 randomColor bottomRow positionRelative">
+                  <img src="images/cute.png" alt="bunny" />
+              </div>
+              <div class="col-md-3 randomColor bottomRow positionRelative">
+                  <img src="images/cute.png" alt="bunny" />
+              </div>
+          </div>
+
+      </div>
+
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+  </body>
+
+</html>
