@@ -37,8 +37,7 @@
             position: relative;;
         }
 
-        .centering {
-          display: block;
+        .center {
           text-align: center;
         }
 
@@ -79,7 +78,7 @@
                 var myHtml = "";
                 for (var i = 0; i < 10; i = i + 1) {
                     console.log("src:  " + data.data[i].embed_url);
-                    myHtml +='<div class="centering">'+'<iframe src="' + data.data[i].embed_url + '" width="480" height="457" frameborder="0" class="giphy-embed" allowfullscreen></iframe>' +
+                    myHtml +='<div class="center">'+'<iframe src="' + data.data[i].embed_url + '" width="480" height="457" frameborder="0" class="giphy-embed" allowfullscreen></iframe>' +
                         '<p><a href="">via GIPHY</a></p>'+'</div>';
                 }
 
